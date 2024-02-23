@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sciquel</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+    }
+
+    .page-heading {
+        text-align: left;
+        padding-left: 160px;
+        margin-bottom: 35px;
+        font-size: 35px;
+        color: #333;
+    }
+
+
+    .container {
+        position: relative;
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .image {
+        height: 350px;
+        width: 650px;
+        display: block;
+    }
+
+    .info-card {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 150px;
+        padding: 20px;
+        background-color: rgb(105, 189, 208);
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+        text-align: left;
+    }
+
+    .info-card h2 {
+        margin-top: 0;
+        margin-bottom: 15px; 
+    }
+
+    .pill {
+        display: inline-block;
+        background-color: #a82c11;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+
+    .bg {
+        background-color: rgb(10, 54, 10);
+    }
+  
+    .info-footer {
+        position: absolute;
+        top: calc(40% + 80px);
+        left: 20%;
+        transform: translateX(-50%);
+        font-size: 12px;
+        color: #666;
+        text-align: center;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin-bottom: 10px;
+        width: calc(33.333% - 20px);
+        max-height: 350px;
+    }
+
+    .card + .card {
+        margin-left: 20px;
+    }
+
+    .card .content {
+        padding: 20px;
+    }
+
+    .card .image {
+        height: 60px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .article {
+        display: inline-block;
+        color: gray;
+        font-size: 12px;
+        font-weight: bold;
+        padding-left: 250px;
+        margin-right: 10px;
+    }
+
+    .author-info {
+        color: gray;
+        font-size: 15px;
+        margin-right: 225px;
+    }
+
+    .date {
+        color: gray;
+        font-size: 15px;
+    }
+</style>
+</head>
+<body>
+<h1 class="page-heading">Read what's new</h1>
+<div class="container">
+    <img src="bobtail.png" alt="Image" class="image">
+    <div class="info-card">
+        <div class="pill">Biology</div> 
+        <h2>Lights. Camera. Action!</h2>
+        <p>How the Hawaiian bobtail squid brings a creative vision to its maritime world of small big screens</p>
+    </div>
+</div>
+<div class="info-footer">By Edward Chen | 05/27/21</div>
+<!-- Card container for articles -->
+<div class="card-container">
+    <div class="card">
+        <div class="content">
+            <div class="pill">biology</div>
+            <div class="article">ARTICLE</div>
+            <h2>Lights. Camera. Action!</h2>
+            <p>How the Hawaiian bobtail squid brings a creative vision to its...</p>
+            <span class="author-info">By Edward Chen</span>
+            <span class="date">05/27/21</span>
+        </div>
+        <img src="bobtail.png" alt="Image" class="image">
+    </div>
+
+    <div class="card">
+        <div class="content">
+            <div class="pill bg">geology</div>
+            <div class="article">ARTICLE</div>
+            <h2>Lights. Camera. Action!</h2>
+            <p>How the Hawaiian bobtail squid brings a creative vision to its...</p>
+            <span class="author-info">By Edward Chen</span>
+            <span class="date">05/27/21</span>
+        </div>
+        <img src="bobtail.png" alt="Image" class="image">
+    </div>
+
+    <div class="card">
+        <div class="content">
+            <div class="pill">biology</div>
+            <div class="article">ARTICLE</div>
+            <h2>Lights. Camera. Action!</h2>
+            <p>How the Hawaiian bobtail squid brings a creative vision to its...</p>
+            <span class="author-info">By Edward Chen</span>
+            <span class="date">05/27/21</span>
+        </div>
+        <img src="bobtail.png" alt="Image" class="image">
+    </div>
+</div>
+</body>
+</html>
